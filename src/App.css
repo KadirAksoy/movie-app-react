@@ -1,16 +1,49 @@
 .App {
-  text-align: center;
+  text-align: left;
   background-color: #282c34;
+  display: flex;
+  overflow-x: auto; /* Yatayda kaydırma özelliği */
+  -webkit-overflow-scrolling: touch; /* Safari ve diğer bazı tarayıcılar için destek */
 }
 
-/*.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.div-class {
+  margin-left: 15px;
 }
-*/
+.movie {
+  display: flex;
+}
+
+.movie-card {
+  flex: 0 0 auto; /* İçeriklerin esnekliğini ve boyutunu ayarlar */
+  width: 200px;
+  margin: 15px; /* Kartlar arası boşluk */
+  background-color: #333;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.movie-image {
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #555;
+}
+
+.movie-details {
+  padding: 10px;
+  color: #fff;
+}
+
+.movie-title {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.movie-rate {
+  font-size: 14px;
+}
+
+.div-class {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
+}
